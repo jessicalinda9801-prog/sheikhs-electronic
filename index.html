@@ -3,72 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sheikh's Electronic Store</title>
+<title>Sheikh's Electronic</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
 background:#0b0b0f;
 color:white;
 }
 
 header{
+background:black;
+padding:20px;
 text-align:center;
-padding:25px;
-background:linear-gradient(90deg,#111,#1c1c1c);
+border-bottom:2px solid #00ff99;
 }
 
 header h1{
-margin:0;
-letter-spacing:3px;
+font-size:35px;
+color:#00ff99;
 }
 
 header p{
 color:#aaa;
+margin-top:10px;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 padding:20px;
 }
 
 .card{
-background:#15151a;
-padding:15px;
-border-radius:15px;
+background:#141414;
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
 border:1px solid #222;
-transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
-border-color:#00ff99;
+transform:translateY(-8px);
+box-shadow:0 0 20px #00ff99;
 }
 
 .card img{
 width:100%;
-height:150px;
+height:220px;
 object-fit:cover;
-border-radius:10px;
+}
+
+.info{
+padding:15px;
+}
+
+.info h3{
+margin-bottom:10px;
 }
 
 .price{
 color:#00ff99;
+font-size:22px;
 font-weight:bold;
+margin-bottom:15px;
 }
 
 button{
 width:100%;
-padding:10px;
+padding:12px;
+background:#00ff99;
 border:none;
 border-radius:10px;
-background:#00ff99;
-color:black;
+font-size:17px;
 font-weight:bold;
 cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
 }
 </style>
 </head>
@@ -76,45 +98,53 @@ cursor:pointer;
 <body>
 
 <header>
-<h1>SHEIKH'S ELECTRONIC</h1>
-<p>Premium Gadgets • Accessories • Lifestyle</p>
+<h1>Sheikh's Electronic</h1>
+<p>Premium Gadgets • Watches • Pods • Tumblers</p>
 </header>
 
 <div class="products">
 
-<!-- TUMBLER -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1526401485004-2aa6c1e04e1a?auto=format&fit=crop&w=500&q=60">
-<h3>Tumbler Bottle</h3>
-<p class="price">Rs 1499</p>
+<img src="watch.jpg">
+<div class="info">
+<h3>Rolex Style Smart Watch</h3>
+<div class="price">Rs 4999</div>
 <button>Add to Cart</button>
 </div>
-
-<!-- POD VAPE -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=500&q=60">
-<h3>Pod Vape</h3>
-<p class="price">Rs 3999</p>
-<button>Add to Cart</button>
 </div>
 
-<!-- HOME ACCESSORIES -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=500&q=60">
-<h3>Home Accessories</h3>
-<p class="price">Rs 2299</p>
+<img src="tumbler.jpg">
+<div class="info">
+<h3>Premium Tumbler</h3>
+<div class="price">Rs 3000</div>
 <button>Add to Cart</button>
 </div>
+</div>
 
-<!-- GADGET -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=60">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800">
+<div class="info">
 <h3>Trendy Gadget</h3>
-<p class="price">Rs 4499</p>
+<div class="price">Rs 3499</div>
 <button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?w=800">
+<div class="info">
+<h3>Premium Pod Vape</h3>
+<div class="price">Rs 2799</div>
+<button>Add to Cart</button>
+</div>
 </div>
 
 </div>
+
+<footer>
+© 2026 Sheikh's Electronic | Premium Online Store
+</footer>
 
 </body>
 </html>
